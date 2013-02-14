@@ -1,7 +1,8 @@
 # /etc/udev/rules.d/50-avr-programmers.rules
 #
-# Rules to make AVR programmers user-accessible 
-#
+# Udev rules to make AVR programmers user-accessible 
+# From: https://wiki.archlinux.org/index.php/Udev
+
 # USBtinyISP Programmer rules
 SUBSYSTEMS=="usb", ATTRS{idVendor}=="1781", ATTRS{idProduct}=="0c9f", GROUP="users", MODE="0666"
 SUBSYSTEMS=="usb", ATTRS{idVendor}=="16c0", ATTRS{idProduct}=="0479", GROUP="users", MODE="0666"
