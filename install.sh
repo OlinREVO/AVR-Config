@@ -6,6 +6,7 @@ sudo apt-get install avrdude gcc-avr avr-libc git-core build-essential checkinst
 wget https://github.com/OlinREVO/AVR-Config/archive/master.zip
 unzip master.zip
 cd AVR-Config-master
+sudo cp .avrduderc /root/ # For `sudo make flash`
 mv .avrduderc ~
 sudo mv 50-avr-programmers.rules /etc/udev/rules.d/
 cd ..
